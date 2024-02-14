@@ -1,20 +1,16 @@
-
-import React,{useState} from "react";
-import './../styles/App.css';
+import React, { useState } from "react";
+import "./../styles/App.css";
 
 const App = () => {
-  const [data,setdata] = useState("");
+  const [data, setData] = useState("");
   return (
     <div>
-        {/* Do not remove the main div */}
-        <p>Enter Your name :</p>
-        <input type="text" onChange={(e)=>setdata(e.target.value)}></input>
-        {
-          data &&  <p>Hello {data}!</p>
-        }
-       
+      {/* Do not remove the main div */}
+      <p>Enter Your name :</p> {/* Include the text before input */}
+      <input type="text" onChange={(e) => setData(e.target.value)}></input>
+      {data && <p>Hello {data}!</p>}
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
