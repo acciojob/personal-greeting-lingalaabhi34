@@ -6,9 +6,9 @@ const App = () => {
   return (
     <div>
       {/* Do not remove the main div */}
-      <p>Enter Your name :</p> {/* Include the text before input */}
+      <p>Enter Your name : {/* Include the text before input */}
       <input type="text" onChange={(e) => setData(e.target.value)}></input>
-      {data && <p>Hello {data}!</p>}
+      {data && <p>Hello {data}!</p>}</p>
     </div>
   );
 };
